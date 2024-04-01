@@ -1,7 +1,7 @@
 import string
 
 
-# create function at removes punctuation
+# create function that removes punctuation
 def clean_punc(source_str):
     lower_source = source_str.lower().split()
     list_nopunc = []
@@ -11,7 +11,7 @@ def clean_punc(source_str):
     return list_nopunc
 
 
-# create function that detects if a specific word (argument 2) is in a string (argument 1)
+# create function that detects if a specific word (argument 2) is in a string of choice (argument 1)
 def detect_word(source_str, word_to_detect):
     lower_sourcestr = source_str.lower()
     lower_word = word_to_detect.lower()
@@ -25,7 +25,7 @@ def detect_word(source_str, word_to_detect):
 # open and read text file of interest
 my_file = open('ThreeYearsinEurope.txt', 'rt', encoding='utf-8')
 read_file = my_file.readlines()
-# designate the terms you'd like to check for in the text file
+# designate the terms you'd like to search for in the text file
 search_terms = ['oxford', 'paris', 'london', 'quantum']
 count = {}
 # loop over each term and create an output file for each term
